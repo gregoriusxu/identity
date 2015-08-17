@@ -1,0 +1,69 @@
+﻿Reference: 
+https://msdn.microsoft.com/en-gb/data/jj591621.aspx
+http://www.dotnet-tricks.com/Tutorial/entityframework/2VOa140214-Entity-Framework-6-Code-First-Migrations-with-Multiple-Data-Contexts.html
+
+
+首先打开“程序包管理器控制台”,设置默认为当前项目（Zkly.DAL）
+确保 Zkly.Web 是整个解决方案默认的启动项目
+
+====================================================================================================================================================
+
+
+语法- EF代码优先，在同一项目迁移多个dbcontexts：
+（第一步主要生成 Migrations目录，这里我们基本不需要执行该命令）
+
+1. enable-migrations -ContextTypeName <DbContext-Name-with-Namespaces> -MigrationsDirectory:<Migrations-Directory-Name>
+例如:
+enable-migrations -ContextTypeName Zkly.DAL.Context.UserDbContext -MigrationsDirectory:Migrations\User
+enable-migrations -ContextTypeName Zkly.DAL.Context.ConfigDbContext -MigrationsDirectory:Migrations\Config
+
+
+2. Add-Migration -configuration <DbContext-Migrations-Configuration-Class-with-Namespaces> <Migrations-Name>
+（第二步主要作用于，数据库的修改的动作，譬如表的增加，列的增加或者修改
+ 操作UserDbContext时：  用命令 Add-Migration -configuration Zkly.DAL.Migrations.User.Configuration 你自定义的名字
+ 操作ConfigDbContext时：用命令 Add-Migration -configuration Zkly.DAL.Migrations.Config.Configuration  你自定义的名字
+  ）
+
+例如:
+Add-Migration -configuration Zkly.DAL.Migrations.User.Configuration t<YourChangeName>
+Add-Migration -configuration Zkly.DAL.Migrations.Config.Configuration t<YourChangeName>
+
+
+3. Update-Database -configuration <DbContext-Migrations-Configuration-Class-with-Namespaces> -Verbose
+（第三步主要把第二步的数据迁移到LocalDb里面去,迁移之后刷新，查看更改的操作）
+
+例如:
+Update-Database -configuration ZKJL.Identity.EntityFramework.Migrations.Configuration -Verbose
+
+
+====================================================================================================================================================
+
+将数据库迁移/回滚到指定版本:
+
+(
+这里是对数据的回滚操作
+ 操作UserDbContext时：  Update-Database -configuration Zkly.DAL.Migrations.User.Configuration -TargetMigration:"这里是你迁移/回滚的具体文件名" -verbose
+ 操作ConfigDbContext时：Update-Database -configuration Zkly.DAL.Migrations.Config.Configuration -TargetMigration:"这里是你迁移/回滚的具体文件名" -verbose
+
+ 异常情况：回滚的时候有时候报回滚不明确，这时命令最后加  -Force
+)
+
+例如:
+Update-Database -configuration Zkly.DAL.Migrations.User.Configuration -TargetMigration:"201503310957532_Initial" -verbose
+Update-Database -configuration Zkly.DAL.Migrations.Config.Configuration -TargetMigration:"201503310824281_Initial" -verbose
+
+====================================================================================================================================================
+
+回滚到最初状态（清空），或者直接删除所有表：
+Update-Database  -configuration Zkly.DAL.Migrations.User.Configuration -TargetMigration:$InitialDatabase -Force
+Update-Database  -configuration Zkly.DAL.Migrations.Config.Configuration -TargetMigration:$InitialDatabase -Force
+
+
+====================================================================================================================================================
+生成SQL脚本，使用 -Script flag:
+
+Update-Database -Script -SourceMigration: $InitialDatabase
+
+例如:
+Update-Database -configuration Zkly.DAL.Migrations.User.Configuration -Script -SourceMigration: $InitialDatabase
+Update-Database -configuration Zkly.DAL.Migrations.Config.Configuration -Script -SourceMigration: $InitialDatabase

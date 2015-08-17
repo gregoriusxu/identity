@@ -1,0 +1,72 @@
+﻿<div ng-controller="app.views.menues.index as vm">
+    <div class="command-list row">
+        <div class="col-lg-12 text-right">
+            <div class="btn-group">
+                <a href="javascript:void(0)" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Sorted by {{vm.sorting}}
+                    <span class="caret"></span>
+                    <div class="ripple-wrapper"></div>
+                </a>
+                <ul class="dropdown-menu">
+                    <li ng-repeat="sortingDirection in vm.sortingDirections" ng-show="sortingDirection != vm.sorting"><a href="javascript:void(0)" class=" withripple" ng-click="vm.sort(sortingDirection)">Sort by {{sortingDirection}}<div class="ripple-wrapper"></div></a></li>
+                </ul>
+            </div>
+            <button ng-if="vm.permissions.canCreateMenues" ng-click="vm.showNewMenuDialog()" class="btn btn-primary btn-raised"><i class="fa fa-asterisk"></i> 新建菜单</button>
+        </div>
+    </div>
+    <div class="question-list">
+        <div class="row question" ng-repeat="menu in vm.menues">
+            <div class="vote-count col-sm-1 hidden-xs">
+                <div>名称</div>
+                <div>
+                    <a href="javascript:;" ng-if="vm.permissions.canCreateMenues" ng-click="vm.showNewMenuDialog(menu.id,'查看')">{{menu.name}}</a>
+                </div>
+            </div>
+            <div class="answer-count col-sm-1 hidden-xs">
+                <div>显示名称</div>
+                <div>{{menu.displayName}}</div>
+            </div>
+            <div class="answer-count col-sm-1 hidden-xs">
+                <div>父级菜单</div>
+                <div>{{menu.parent.name}}</div>
+            </div>
+            <div class="view-count col-sm-1 hidden-xs">
+                <div>排序</div>
+                <div>{{menu.order}}</div>
+            </div>
+            <div class="view-count col-sm-1 hidden-xs">
+                <div>图标</div>
+                <div>{{menu.icon}}</div>
+            </div>
+            <div class="view-count col-sm-1 hidden-xs">
+                <div>路径</div>
+                <div>{{menu.url}}</div>
+            </div>
+            <div class="view-count col-sm-1 hidden-xs">
+                <div>需要的权限</div>
+                <div>{{menu.requiredPermissionName}}</div>
+            </div>
+            <div class="view-count col-sm-1 hidden-xs">
+                <div>
+                    <a href="javascript:;" ng-if="vm.permissions.canCreateMenues" ng-click="vm.showNewMenuDialog(menu.id,'编辑')" class="btn btn-primary">编辑</a>
+                </div>
+            </div>
+            <div class="view-count col-sm-1 hidden-xs">
+                <div>
+                    <a ng-if="vm.permissions.canCreateMenues" ng-click="vm.deleteMenu(menu.id)" class="btn btn-warning">删除</a>
+                </div>
+            </div>
+            @*<div class="summary col-xs-12 col-sm-9">
+                    <h3><a ng-href="#/menues/{{menu.id}}"><span class="question-id">#{{menu.id}}</span> {{menu.name}}</a></h3>
+                    <div>
+                        <span>{{menu.creatorUserName}}</span>,
+                        <span class="text-muted">{{menu.creationTime | fromNow}}</span>
+                    </div>
+                </div>*@
+        </div>
+    </div>
+    <div class="row">
+        <div class="text-right">Showing {{vm.menues.length}} of total {{vm.totalMenuCount}} users</div>
+    </div>
+    <a ng-show="vm.totalMenuCount>vm.menues.length" href="javascript:void(0)" ng-click="vm.showMore()" class="btn btn-default btn-lg btn-block withripple">SHOW MORE<div class="ripple-wrapper"></div></a>
+</div>

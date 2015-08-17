@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="zh-CN">
+  <texts>
+    <text name="Menues" value="菜单管理" />
+    <text name="Users" value="用户管理" />
+    <text name="Roles" value="角色管理" />
+    <text name="UserRoles" value="用户角色管理" />
+    <text name="MenuRoles" value="菜单角色管理" />
+  </texts>
+</localizationDictionary>

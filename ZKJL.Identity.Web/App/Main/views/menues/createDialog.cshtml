@@ -1,0 +1,68 @@
+﻿<div>
+    <div class="modal-header">
+        <h3 class="modal-title">{{vm.viewname}}菜单!</h3>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal">
+            <fieldset>
+                <div class="form-group">
+                    <label for="NameInput" class="col-lg-2 control-label">名称:</label>
+                    <div class="col-lg-10">
+                        <input ng-model="vm.menu.name" type="text" class="form-control" name="NameInput" placeholder="Enter title here">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="DisplayNameInput" class="col-lg-2 control-label">显示名称:</label>
+                    <div class="col-lg-10">
+                        <textarea ng-model="vm.menu.displayName" class="form-control" rows="5" name="DisplayNameInput" placeholder="Describe your menu here"></textarea>
+                        @*<span class="help-block">Please search your question before creating new one. You can add code snippets and images to describe your problem cleaner.</span>*@
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">父菜单:</label>
+                    <div class="col-lg-10">
+                        <a href="javascript:void(0)" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            {{vm.menuParentName}}
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="menu in vm.menues">
+                                <a href="javascript:void(0)" class="withripple" ng-click="vm.menuClick(menu.id,menu.name)">
+                                    {{menu.name}}
+                                    <div class="ripple-wrapper"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="OrderInput" class="col-lg-2 control-label">排序:</label>
+                    <div class="col-lg-10">
+                        <input ng-model="vm.menu.order" type="text" class="form-control" name="OrderInput" placeholder="Enter title here">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="IconInput" class="col-lg-2 control-label">图标:</label>
+                    <div class="col-lg-10">
+                        <input ng-model="vm.menu.icon" type="text" class="form-control" name="IconInput" placeholder="Enter title here">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="UrlInput" class="col-lg-2 control-label">路径:</label>
+                    <div class="col-lg-10">
+                        <input ng-model="vm.menu.url" type="text" class="form-control" name="UrlInput" placeholder="Enter title here">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="RequiredPermissionNameInput" class="col-lg-2 control-label">需要的权限:</label>
+                    <div class="col-lg-10">
+                        <input ng-model="vm.menu.requiredPermissionName" type="text" class="form-control" name="RequiredPermissionNameInput" placeholder="Enter title here">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-warning" ng-click="vm.cancel()">取消</button>
+        <button class="btn btn-primary" ng-if="!vm.isview" ng-click="vm.save()">保存</button>
+    </div>
+</div>

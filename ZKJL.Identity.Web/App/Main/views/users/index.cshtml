@@ -1,0 +1,47 @@
+﻿<div ng-controller="app.views.users.index as vm">
+    <div class="bs-component">
+        <div class="command-list row">
+            <div class="col-lg-12 text-right">
+                <div class="btn-group">
+                    <a href="javascript:void(0)" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Sorted by {{vm.sorting}}
+                        <span class="caret"></span>
+                        <div class="ripple-wrapper"></div>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ng-repeat="sortingDirection in vm.sortingDirections" ng-show="sortingDirection != vm.sorting">
+                            <a href="javascript:void(0)" class=" withripple" ng-click="vm.sort(sortingDirection)">
+                                Sort by {{sortingDirection}}
+                                <div class="ripple-wrapper"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button ng-if="vm.permissions.canCreateUsers" ng-click="vm.showNewUserDialog()" class="btn btn-primary btn-raised"><i class="fa fa-asterisk"></i> 新建用户</button>
+            </div>
+        </div>
+        <div class="list-group">
+            <div ng-repeat="user in vm.users">
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="mdi-social-person"></i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content"></div>
+                        <h4 class="list-group-item-heading">{{user.userName}}</h4>
+                        <p class="list-group-item-text">
+                            {{user.name}} {{user.surname}} <span class="text-muted">{{user.emailAddress}}</span>
+                            <span><a href="javascript:;" ng-if="vm.permissions.canCreateUsers" ng-click="vm.showNewUserDialog(user.id,'编辑')" class="btn btn-primary">编辑</a></span>
+                            <span><a ng-if="vm.permissions.canCreateUsers" ng-click="vm.deleteUser(user.id)" class="btn btn-warning">删除</a></span>
+                        </p>
+                    </div>
+                </div>
+                <div ng-if="!$last" class="list-group-separator"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="text-right">Showing {{vm.users.length}} of total {{vm.totalUserCount}} menues</div>
+    </div>
+    <a ng-show="vm.totalUserCount>vm.users.length" href="javascript:void(0)" ng-click="vm.showMore()" class="btn btn-default btn-lg btn-block withripple">SHOW MORE<div class="ripple-wrapper"></div></a>
+</div>

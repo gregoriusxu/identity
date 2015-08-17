@@ -1,0 +1,55 @@
+﻿<div>
+    <div class="modal-header">
+        <h3 class="modal-title">{{vm.viewname}}用户!</h3>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal">
+            <fieldset>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">系统:</label>
+                    <div class="col-lg-9">
+                        <a href="javascript:void(0)" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            {{vm.tenantName}}
+                        </a>
+                        <input ng-model="vm.tenantId" type="hidden">
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="tenant in vm.multiTenancys">
+                                <a href="javascript:void(0)" class="withripple" ng-click="vm.tenantClick(tenant.id,tenant.name)">
+                                    {{tenant.name}}
+                                    <div class="ripple-wrapper"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">用户名:</label>
+                    <div class="col-lg-9">
+                        <input ng-model="vm.user.userName" type="text" class="form-control" name="NameInput" placeholder="输入用户名">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">姓:</label>
+                    <div class="col-lg-3">
+                        <input ng-model="vm.user.surname" type="text" class="form-control" name="OrderInput" placeholder="输入姓">
+                    </div>
+                    <label class="col-lg-3 control-label">名:</label>
+                    <div class="col-lg-3">
+                        <input ng-model="vm.user.name" type="text" class="form-control" name="OrderInput" placeholder="输入名">
+                        @*<span class="help-block">Please search your question before creating new one. You can add code snippets and images to describe your problem cleaner.</span>*@
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Email地址:</label>
+                    <div class="col-lg-9">
+                        <input ng-model="vm.user.emailAddress" type="text" class="form-control" name="NameInput" placeholder="输入Email地址">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-warning" ng-click="vm.cancel()">取消</button>
+        <button class="btn btn-primary" ng-if="!vm.isview" ng-click="vm.save()">保存</button>
+    </div>
+</div>
