@@ -20,7 +20,43 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKJL.Identity.Web", "ZKJL.I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKJL.Identity.WebApi", "ZKJL.Identity.WebApi\ZKJL.Identity.WebApi.csproj", "{5EB52D3D-09FD-463A-B02A-8D9856BD3724}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abp.EntityFramework", "..\..\study\aspnetboilerplate-master\src\Abp.EntityFramework\Abp.EntityFramework.csproj", "{948F0CAF-3382-4E03-9A0F-0DDB206FE40D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abp", "..\..\study\aspnetboilerplate-master\src\Abp\Abp.csproj", "{2C221D3B-5F54-4C5B-8082-318636415132}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abp.Zero", "..\..\study\module-zero-master\src\Abp.Zero\Abp.Zero.csproj", "{70D916F2-9BFF-43DA-B3F7-3E0655114D48}"
+EndProject
 Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/tfs/luyan
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ZKJL.Identity.Application\\ZKJL.Identity.Application.csproj
+		SccProjectName1 = ZKJL.Identity.Application
+		SccLocalPath1 = ZKJL.Identity.Application
+		SccProjectUniqueName2 = ZKJL.Identity.Core\\ZKJL.Identity.Core.csproj
+		SccProjectName2 = ZKJL.Identity.Core
+		SccLocalPath2 = ZKJL.Identity.Core
+		SccProjectUniqueName3 = ZKJL.Identity.EntityFramework\\ZKJL.Identity.EntityFramework.csproj
+		SccProjectName3 = ZKJL.Identity.EntityFramework
+		SccLocalPath3 = ZKJL.Identity.EntityFramework
+		SccProjectUniqueName4 = ZKJL.Identity.Web\\ZKJL.Identity.Web.csproj
+		SccProjectName4 = ZKJL.Identity.Web
+		SccLocalPath4 = ZKJL.Identity.Web
+		SccProjectUniqueName5 = ZKJL.Identity.WebApi\\ZKJL.Identity.WebApi.csproj
+		SccProjectName5 = ZKJL.Identity.WebApi
+		SccLocalPath5 = ZKJL.Identity.WebApi
+		SccProjectUniqueName6 = ..\\..\\study\\aspnetboilerplate-master\\src\\Abp.EntityFramework\\Abp.EntityFramework.csproj
+		SccProjectName6 = ../../study/aspnetboilerplate-master/src/Abp.EntityFramework
+		SccLocalPath6 = ..\\..\\study\\aspnetboilerplate-master\\src\\Abp.EntityFramework
+		SccProjectUniqueName7 = ..\\..\\study\\aspnetboilerplate-master\\src\\Abp\\Abp.csproj
+		SccProjectName7 = ../../study/aspnetboilerplate-master/src/Abp
+		SccLocalPath7 = ..\\..\\study\\aspnetboilerplate-master\\src\\Abp
+		SccProjectUniqueName8 = ..\\..\\study\\module-zero-master\\src\\Abp.Zero\\Abp.Zero.csproj
+		SccProjectName8 = ../../study/module-zero-master/src/Abp.Zero
+		SccLocalPath8 = ..\\..\\study\\module-zero-master\\src\\Abp.Zero
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -46,6 +82,18 @@ Global
 		{5EB52D3D-09FD-463A-B02A-8D9856BD3724}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EB52D3D-09FD-463A-B02A-8D9856BD3724}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EB52D3D-09FD-463A-B02A-8D9856BD3724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{948F0CAF-3382-4E03-9A0F-0DDB206FE40D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948F0CAF-3382-4E03-9A0F-0DDB206FE40D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948F0CAF-3382-4E03-9A0F-0DDB206FE40D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948F0CAF-3382-4E03-9A0F-0DDB206FE40D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C221D3B-5F54-4C5B-8082-318636415132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C221D3B-5F54-4C5B-8082-318636415132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C221D3B-5F54-4C5B-8082-318636415132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C221D3B-5F54-4C5B-8082-318636415132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70D916F2-9BFF-43DA-B3F7-3E0655114D48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D916F2-9BFF-43DA-B3F7-3E0655114D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D916F2-9BFF-43DA-B3F7-3E0655114D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D916F2-9BFF-43DA-B3F7-3E0655114D48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

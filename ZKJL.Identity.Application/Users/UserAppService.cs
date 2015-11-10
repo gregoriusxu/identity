@@ -88,42 +88,27 @@ namespace ZKJL.Identity.Application.Users
         [AbpAuthorize("CanDeleteUsers")] //An example of permission checking
         public async Task DeleteUser(GetUserInput input)
         {
-            using (CurrentUnitOfWork.DisableFilter(AbpDataFilters.MayHaveTenant))
-            {
-                var user =
-                   _userRepository
-                       .GetAll()
-                       .Include(q => q.CreatorUser)
-                       .FirstOrDefault(q => q.Id == input.Id);
-
-                if (user == null)
-                {
-                    throw new UserFriendlyException("There is no such a user. Maybe it's deleted.");
-                }
-                CurrentUnitOfWork.SetFilterParameter(AbpDataFilters.MayHaveTenant, AbpDataFilters.Parameters.TenantId, user.TenantId);
-                //await _userRepository.DeleteAsync(input.Id);
-                await _userManager.DeleteAsync(user);
-            }
+            await _userRepository.DeleteAsync(input.Id);
         }
 
         public GetUserOutput GetUser(GetUserInput input)
         {
             using (CurrentUnitOfWork.DisableFilter(AbpDataFilters.MayHaveTenant))
             {
-                var user =
+                var menu =
                     _userRepository
                         .GetAll()
                         .Include(q => q.CreatorUser)
                         .FirstOrDefault(q => q.Id == input.Id);
 
-                if (user == null)
+                if (menu == null)
                 {
-                    throw new UserFriendlyException("There is no such a user. Maybe it's deleted.");
+                    throw new UserFriendlyException("There is no such a menu. Maybe it's deleted.");
                 }
 
                 return new GetUserOutput()
                 {
-                    User = user.MapTo<UserDto>()
+                    User = menu.MapTo<UserDto>()
                 };
             }
         }

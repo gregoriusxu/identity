@@ -710,3 +710,191 @@ DEBUG 2015-08-13 16:51:55,531 [1    ] Abp.Localization.LocalizationManager     -
 DEBUG 2015-08-13 16:51:55,531 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
 DEBUG 2015-08-13 16:51:55,532 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ZKJL.Identity.Web
 DEBUG 2015-08-13 16:51:55,532 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-08-31 13:59:45,870 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-31 13:59:48,158 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-08-31 13:59:48,162 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 13:59:48,163 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 13:59:48,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 13:59:48,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 13:59:48,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 13:59:48,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 13:59:48,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.6.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 13:59:48,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.6.3.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 13:59:48,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Application.IdentityApplicationModule, ZKJL.Identity.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 13:59:48,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Core.IdentityCoreModule, ZKJL.Identity.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 13:59:48,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.EntityFramework.IdentityDataModule, ZKJL.Identity.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 13:59:48,165 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Web.IdentityWebModule, ZKJL.Identity.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 13:59:48,165 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.WebApi.IdentityWebApiModule, ZKJL.Identity.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 13:59:48,167 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-08-31 13:59:49,723 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes defines auto mapping attributes
+DEBUG 2015-08-31 13:59:49,723 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Application.MultiTenancy.TenantDto
+DEBUG 2015-08-31 13:59:49,953 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Application.Users.Dto.UserDto
+DEBUG 2015-08-31 13:59:49,960 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Core.Menues.MenuDto
+DEBUG 2015-08-31 13:59:51,701 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.Menues.IMenuAppService' with service name 'app/menu'.
+DEBUG 2015-08-31 13:59:51,702 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.MultiTenancy.IMultiTenancyService' with service name 'app/multiTenancy'.
+DEBUG 2015-08-31 13:59:51,703 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-08-31 13:59:53,118 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-08-31 13:59:53,124 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-31 13:59:53,124 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-08-31 13:59:53,125 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ZKJL.Identity.Web
+DEBUG 2015-08-31 13:59:53,125 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-08-31 14:02:25,974 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-31 14:02:27,784 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-08-31 14:02:27,789 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:02:27,790 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:02:27,791 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:02:27,791 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:02:27,791 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:02:27,791 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:02:27,791 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.6.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:02:27,791 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.6.3.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:02:27,791 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Application.IdentityApplicationModule, ZKJL.Identity.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:02:27,791 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Core.IdentityCoreModule, ZKJL.Identity.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:02:27,792 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.EntityFramework.IdentityDataModule, ZKJL.Identity.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:02:27,792 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Web.IdentityWebModule, ZKJL.Identity.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:02:27,792 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.WebApi.IdentityWebApiModule, ZKJL.Identity.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:02:27,795 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-08-31 14:02:28,213 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes defines auto mapping attributes
+DEBUG 2015-08-31 14:02:28,213 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Application.MultiTenancy.TenantDto
+DEBUG 2015-08-31 14:02:28,318 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Application.Users.Dto.UserDto
+DEBUG 2015-08-31 14:02:28,326 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Core.Menues.MenuDto
+DEBUG 2015-08-31 14:02:28,794 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.Menues.IMenuAppService' with service name 'app/menu'.
+DEBUG 2015-08-31 14:02:28,795 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.MultiTenancy.IMultiTenancyService' with service name 'app/multiTenancy'.
+DEBUG 2015-08-31 14:02:28,796 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-08-31 14:02:28,825 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-08-31 14:02:28,829 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-31 14:02:28,830 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-08-31 14:02:28,830 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ZKJL.Identity.Web
+DEBUG 2015-08-31 14:02:28,830 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-08-31 14:06:52,812 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-31 14:06:55,192 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-08-31 14:06:55,195 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:06:55,197 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:06:55,197 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:06:55,197 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:06:55,197 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:06:55,197 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:06:55,224 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.6.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:06:55,225 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.6.3.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:06:55,225 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Application.IdentityApplicationModule, ZKJL.Identity.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:06:55,225 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Core.IdentityCoreModule, ZKJL.Identity.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:06:55,225 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.EntityFramework.IdentityDataModule, ZKJL.Identity.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:06:55,225 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Web.IdentityWebModule, ZKJL.Identity.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:06:55,225 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.WebApi.IdentityWebApiModule, ZKJL.Identity.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 14:06:55,229 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-08-31 14:06:57,164 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes defines auto mapping attributes
+DEBUG 2015-08-31 14:06:57,164 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Application.MultiTenancy.TenantDto
+DEBUG 2015-08-31 14:06:57,315 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Application.Users.Dto.UserDto
+DEBUG 2015-08-31 14:06:57,320 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Core.Menues.MenuDto
+DEBUG 2015-08-31 14:06:58,861 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.Menues.IMenuAppService' with service name 'app/menu'.
+DEBUG 2015-08-31 14:06:58,862 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.MultiTenancy.IMultiTenancyService' with service name 'app/multiTenancy'.
+DEBUG 2015-08-31 14:06:58,863 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-08-31 14:06:59,439 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-08-31 14:06:59,445 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-31 14:06:59,445 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-08-31 14:06:59,446 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ZKJL.Identity.Web
+DEBUG 2015-08-31 14:06:59,446 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+ERROR 2015-08-31 14:10:22,031 [18   ] .Mvc.Controllers.AbpHandleErrorAttribute - System.InvalidOperationException: The view '~/App/Main/views/roles/index.cshtml' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/App/Main/views/roles/index.cshtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+System.InvalidOperationException: The view '~/App/Main/views/roles/index.cshtml' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/App/Main/views/roles/index.cshtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2015-08-31 15:01:06,651 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-31 15:01:09,821 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-08-31 15:01:09,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:01:09,827 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:01:09,827 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:01:09,827 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:01:09,827 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:01:09,827 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:01:09,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.6.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:01:09,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.6.3.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:01:09,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Application.IdentityApplicationModule, ZKJL.Identity.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:01:09,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Core.IdentityCoreModule, ZKJL.Identity.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:01:09,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.EntityFramework.IdentityDataModule, ZKJL.Identity.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:01:09,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Web.IdentityWebModule, ZKJL.Identity.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:01:09,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.WebApi.IdentityWebApiModule, ZKJL.Identity.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:01:09,831 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-08-31 15:01:11,248 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes defines auto mapping attributes
+DEBUG 2015-08-31 15:01:11,248 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Application.MultiTenancy.TenantDto
+DEBUG 2015-08-31 15:01:11,419 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Application.Users.Dto.UserDto
+DEBUG 2015-08-31 15:01:11,426 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Core.Menues.MenuDto
+DEBUG 2015-08-31 15:01:12,841 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.Menues.IMenuAppService' with service name 'app/menu'.
+DEBUG 2015-08-31 15:01:12,842 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.MultiTenancy.IMultiTenancyService' with service name 'app/multiTenancy'.
+DEBUG 2015-08-31 15:01:12,843 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-08-31 15:01:13,823 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-08-31 15:01:13,828 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-31 15:01:13,828 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-08-31 15:01:13,829 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ZKJL.Identity.Web
+DEBUG 2015-08-31 15:01:13,829 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-08-31 15:32:02,805 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-31 15:32:08,266 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-08-31 15:32:08,270 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:32:08,271 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:32:08,272 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:32:08,272 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:32:08,272 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:32:08,273 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:32:08,274 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.6.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:32:08,274 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.6.3.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:32:08,274 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Application.IdentityApplicationModule, ZKJL.Identity.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:32:08,274 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Core.IdentityCoreModule, ZKJL.Identity.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:32:08,274 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.EntityFramework.IdentityDataModule, ZKJL.Identity.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:32:08,274 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Web.IdentityWebModule, ZKJL.Identity.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:32:08,275 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.WebApi.IdentityWebApiModule, ZKJL.Identity.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-31 15:32:08,278 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-08-31 15:32:09,755 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes defines auto mapping attributes
+DEBUG 2015-08-31 15:32:09,755 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Application.MultiTenancy.TenantDto
+DEBUG 2015-08-31 15:32:09,865 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Application.Users.Dto.UserDto
+DEBUG 2015-08-31 15:32:09,873 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Core.Menues.MenuDto
+DEBUG 2015-08-31 15:32:11,505 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.Menues.IMenuAppService' with service name 'app/menu'.
+DEBUG 2015-08-31 15:32:11,506 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.MultiTenancy.IMultiTenancyService' with service name 'app/multiTenancy'.
+DEBUG 2015-08-31 15:32:11,507 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-08-31 15:32:11,538 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-08-31 15:32:11,544 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-31 15:32:11,544 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-08-31 15:32:11,544 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ZKJL.Identity.Web
+DEBUG 2015-08-31 15:32:11,545 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-10-29 16:56:50,881 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-10-29 16:56:52,539 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-10-29 16:56:52,542 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-29 16:56:52,543 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-29 16:56:52,543 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-29 16:56:52,543 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-29 16:56:52,543 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-29 16:56:52,543 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-29 16:56:52,543 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.6.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-29 16:56:52,543 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.6.3.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-29 16:56:52,544 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Application.IdentityApplicationModule, ZKJL.Identity.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-29 16:56:52,544 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Core.IdentityCoreModule, ZKJL.Identity.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-29 16:56:52,544 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.EntityFramework.IdentityDataModule, ZKJL.Identity.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-29 16:56:52,544 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.Web.IdentityWebModule, ZKJL.Identity.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-29 16:56:52,544 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ZKJL.Identity.WebApi.IdentityWebApiModule, ZKJL.Identity.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-29 16:56:52,546 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-10-29 16:56:53,579 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes defines auto mapping attributes
+DEBUG 2015-10-29 16:56:53,579 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Application.MultiTenancy.TenantDto
+DEBUG 2015-10-29 16:56:53,835 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Application.Users.Dto.UserDto
+DEBUG 2015-10-29 16:56:53,841 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - ZKJL.Identity.Core.Menues.MenuDto
+DEBUG 2015-10-29 16:56:54,833 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.Menues.IMenuAppService' with service name 'app/menu'.
+DEBUG 2015-10-29 16:56:54,835 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.MultiTenancy.IMultiTenancyService' with service name 'app/multiTenancy'.
+DEBUG 2015-10-29 16:56:54,836 [1    ] Default                                  - Dynamic web api controller is created for type 'ZKJL.Identity.Application.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-10-29 16:56:55,978 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-10-29 16:56:55,982 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-10-29 16:56:55,982 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-10-29 16:56:55,982 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: ZKJL.Identity.Web
+DEBUG 2015-10-29 16:56:55,982 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb

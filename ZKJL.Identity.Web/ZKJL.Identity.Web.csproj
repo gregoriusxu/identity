@@ -23,14 +23,10 @@
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
     <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
-    <SccProjectName>
-    </SccProjectName>
-    <SccLocalPath>
-    </SccLocalPath>
-    <SccAuxPath>
-    </SccAuxPath>
-    <SccProvider>
-    </SccProvider>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,17 +47,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Abp, Version=0.6.3.2, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Abp.0.6.4.1\lib\net451\Abp.dll</HintPath>
-    </Reference>
     <Reference Include="Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Abp.AutoMapper.0.6.3.0\lib\net451\Abp.AutoMapper.dll</HintPath>
-    </Reference>
-    <Reference Include="Abp.EntityFramework, Version=0.6.3.2, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Abp.EntityFramework.0.6.3.1\lib\net451\Abp.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Abp.Web, Version=0.6.3.2, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -74,10 +62,6 @@
     <Reference Include="Abp.Web.Mvc, Version=0.6.3.2, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Abp.Web.Mvc.0.6.3.0\lib\net451\Abp.Web.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="Abp.Zero, Version=0.6.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Abp.Zero.0.6.5.0\lib\net451\Abp.Zero.dll</HintPath>
     </Reference>
     <Reference Include="Abp.Zero.EntityFramework, Version=0.6.3.4, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -799,6 +783,18 @@
     <Folder Include="App\Main\views\roles\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\study\aspnetboilerplate-master\src\Abp.EntityFramework\Abp.EntityFramework.csproj">
+      <Project>{948f0caf-3382-4e03-9a0f-0ddb206fe40d}</Project>
+      <Name>Abp.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\study\aspnetboilerplate-master\src\Abp\Abp.csproj">
+      <Project>{2c221d3b-5f54-4c5b-8082-318636415132}</Project>
+      <Name>Abp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\study\module-zero-master\src\Abp.Zero\Abp.Zero.csproj">
+      <Project>{70d916f2-9bff-43da-b3f7-3e0655114d48}</Project>
+      <Name>Abp.Zero</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ZKJL.Identity.Application\ZKJL.Identity.Application.csproj">
       <Project>{3402255d-2342-4f4b-89d8-2fc58bf62123}</Project>
       <Name>ZKJL.Identity.Application</Name>
